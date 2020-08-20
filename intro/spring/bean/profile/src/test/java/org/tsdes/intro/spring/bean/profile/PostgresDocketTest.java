@@ -1,10 +1,8 @@
 package org.tsdes.intro.spring.bean.profile;
 
-import org.junit.ClassRule;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.util.TestPropertyValues;
 import org.springframework.context.ApplicationContextInitializer;
@@ -12,7 +10,6 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
-import org.springframework.test.context.junit4.SpringRunner;
 import org.testcontainers.containers.GenericContainer;
 import org.tsdes.intro.spring.bean.jpa.Application;
 
@@ -42,7 +39,8 @@ public class PostgresDocketTest extends DbTestBase {
         one on the host OS.
      */
     public static GenericContainer postgres = new GenericContainer("postgres:10")
-            .withExposedPorts(5432);
+            .withExposedPorts(5432)
+            .withEnv("POSTGRES_HOST_AUTH_METHOD","trust");
 
 
     @BeforeAll

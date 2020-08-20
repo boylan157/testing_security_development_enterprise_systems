@@ -26,38 +26,37 @@
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
+            <artifactId>springfox-boot-starter</artifactId>
         </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-spring-web</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-jsr310</artifactId>
         </dependency>
 
+
         <dependency>
-            <groupId>com.netflix.hystrix</groupId>
-            <artifactId>hystrix-core</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId>
         </dependency>
-        <dependency>
-            <!--
-                This in theory is a third-party library coming
-                with Hystrix. Although it works fine from Maven,
-                it fails to build in IntelliJ if explicit
-                declaration is missing here.
-                Might be a bug in IntelliJ, or some weird
-                classpath edge-case
-            -->
-            <groupId>commons-configuration</groupId>
-            <artifactId>commons-configuration</artifactId>
-            <version>1.8</version>
-        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>com.netflix.hystrix</groupId>-->
+<!--            <artifactId>hystrix-core</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            &lt;!&ndash;-->
+<!--                This in theory is a third-party library coming-->
+<!--                with Hystrix. Although it works fine from Maven,-->
+<!--                it fails to build in IntelliJ if explicit-->
+<!--                declaration is missing here.-->
+<!--                Might be a bug in IntelliJ, or some weird-->
+<!--                classpath edge-case-->
+<!--            &ndash;&gt;-->
+<!--            <groupId>commons-configuration</groupId>-->
+<!--            <artifactId>commons-configuration</artifactId>-->
+<!--            <version>1.8</version>-->
+<!--        </dependency>-->
 
 
         <!-- test -->

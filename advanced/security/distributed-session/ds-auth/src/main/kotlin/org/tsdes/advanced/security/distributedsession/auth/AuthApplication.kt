@@ -10,7 +10,7 @@ import org.springframework.security.crypto.password.PasswordEncoder
  * Created by arcuri82 on 10-Nov-17.
  */
 @SpringBootApplication
-class GatewayApplication{
+class AuthApplication{
 
     @Bean
     fun passwordEncoder(): PasswordEncoder {
@@ -20,5 +20,5 @@ class GatewayApplication{
 
 
 fun main(args: Array<String>) {
-    SpringApplication.run(GatewayApplication::class.java, *args)
+    SpringApplication.run(AuthApplication::class.java, *args)
 }

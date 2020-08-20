@@ -15,6 +15,8 @@ The course is composed of 12 lessons, each one lasting between 2 and 4 hours.
   * **advanced/data-format**
   * **advanced/calling-webservice**            
 
+  Exercises: [card-game-part-01](exercises/card-game/card-game-part-01.md)     
+
 <br />
 
 * **Lesson 02**: HTTP and RESTful APIs
@@ -26,6 +28,8 @@ The course is composed of 12 lessons, each one lasting between 2 and 4 hours.
   
   * **advanced/example-news**
   * **advanced/rest/news-rest**
+
+  Exercises: [card-game-part-02](exercises/card-game/card-game-part-02.md)     
 
 <br />
 
@@ -39,6 +43,8 @@ The course is composed of 12 lessons, each one lasting between 2 and 4 hours.
   * **advanced/rest/charset**
   * **advanced/rest/patch**
   * **advanced/rest/gui-v1**
+
+  Exercises: [card-game-part-03](exercises/card-game/card-game-part-03.md)     
 
 <br />
 
@@ -54,9 +60,11 @@ The course is composed of 12 lessons, each one lasting between 2 and 4 hours.
   * **advanced/rest/rest-dto**
   * **advanced/rest/exception-handling**
   * **advanced/rest/rest-exception**
-  * **advanced/rest/pagination**
-  * **advanced/rest/gui-v2**
+  * **advanced/rest/pagination-offset**
+  * **advanced/rest/pagination-keyset-gui-v2**
   
+  Exercises: [card-game-part-04](exercises/card-game/card-game-part-04.md)     
+
 <br />
 
 
@@ -72,6 +80,8 @@ The course is composed of 12 lessons, each one lasting between 2 and 4 hours.
   * **advanced/rest/conditional-change**
   * **advanced/rest/cache**
 
+  Exercises: [card-game-part-05](exercises/card-game/card-game-part-05.md)     
+
 <br />
 
 * **Lesson 06**: Mocking, Circuit Breakers and Test Generation
@@ -84,6 +94,8 @@ The course is composed of 12 lessons, each one lasting between 2 and 4 hours.
   * **advanced/rest/wiremock**
   * **advanced/rest/circuit-breaker**
   * **advanced/rest/evomaster**
+
+  Exercises: [card-game-part-06](exercises/card-game/card-game-part-06.md)     
 
 <br />
 
@@ -102,6 +114,8 @@ The course is composed of 12 lessons, each one lasting between 2 and 4 hours.
   * **advanced/graphql/mutation**
   * **advanced/graphql/news-graphql**
 
+  Exercises: [card-game-part-07](exercises/card-game/card-game-part-07.md)     
+
 <br />
 
 
@@ -115,10 +129,12 @@ The course is composed of 12 lessons, each one lasting between 2 and 4 hours.
   * **advanced/advanced/microservice/discovery/***
   * **advanced/advanced/microservice/gateway/***
   
+  Exercises: [card-game-part-08](exercises/card-game/card-game-part-08.md)     
+
 <br />
 
-* **Lesson 09**: Security in MicroServices
-  
+* **Lesson 09**: Security: Intro/Revision
+
   Slides: [[pdf]](slides/lesson_09.pdf), 
           [[pptx]](slides/lesson_09.pptx)
           
@@ -126,15 +142,32 @@ The course is composed of 12 lessons, each one lasting between 2 and 4 hours.
   
   * **advanced/advanced/security/basic**
   * **advanced/advanced/security/session**
-  * **advanced/advanced/security/distributed-session/***
-  
+  * TODO
+
+  Exercises: [card-game-part-09](exercises/card-game/card-game-part-09.md)     
+
 <br />
 
 
-* **Lesson 10**: AMQP and RabbitMQ
+* **Lesson 10**: Security in MicroServices
   
   Slides: [[pdf]](slides/lesson_10.pdf), 
           [[pptx]](slides/lesson_10.pptx)
+          
+  Modules:     
+  
+  * **advanced/advanced/security/distributed-session/***
+  * TODO
+  
+  Exercises: [card-game-part-10](exercises/card-game/card-game-part-10.md)     
+
+<br />
+
+
+* **Lesson 11**: AMQP and RabbitMQ
+  
+  Slides: [[pdf]](slides/lesson_11.pdf), 
+          [[pptx]](slides/lesson_11.pptx)
           
   Modules:     
   
@@ -145,13 +178,13 @@ The course is composed of 12 lessons, each one lasting between 2 and 4 hours.
   * **advanced/advanced/amqp/topic-exchange**
   * **advanced/advanced/amqp/amqp-rest**
 
-<br />
-
-* **Lesson 11**: Revision
+  Exercises: [card-game-part-11](exercises/card-game/card-game-part-11.md)     
 
 <br />
 
-* **Lesson 12**: Revision
+* **Lesson 12**: Farewell and Revision
+
+  Exercises: [card-game-part-12](exercises/card-game/card-game-part-12.md)     
 
 <br />
 
@@ -159,57 +192,30 @@ The course is composed of 12 lessons, each one lasting between 2 and 4 hours.
 ## External Resources
 
 * [RFC-5789](https://tools.ietf.org/html/rfc5789): *PATCH Method for HTTP*. 
-  All of it.
 * [RFC-7230](https://tools.ietf.org/html/rfc7230): *Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing*.
-  Pages 1-36 (up to beginning of Section 4.1), 
-  41-43 (Section 5 to 5.3.2),
-  44-47 (Section 5.4 to 5.7),
-  and 50-59 (Section 6 to 6.7).
 * [RFC-7231](https://tools.ietf.org/html/rfc7231): *Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content*.
-  Pages 1-72 (up to Section 7.4.1).
 * [RFC-7232](https://tools.ietf.org/html/rfc7232): *Hypertext Transfer Protocol (HTTP/1.1): Conditional Requests*.
-  All of it.  
 * [RFC-7234](https://tools.ietf.org/html/rfc7234): *Hypertext Transfer Protocol (HTTP/1.1): Caching*. 
-  Pages 1-29 (up to Section 5.4).
 * [RFC-7235](https://tools.ietf.org/html/rfc7235): *Hypertext Transfer Protocol (HTTP/1.1): Authentication*. 
-  Pages 1-9 (up to Section 4.4),
-  and 12-13.
 * [RFC-7396](https://tools.ietf.org/html/rfc7396): *JSON Merge Patch*.
-  All of it.
 * [RFC-7538](https://tools.ietf.org/html/rfc7538): *The Hypertext Transfer Protocol Status Code 308 (Permanent Redirect)*.
-  All of it.    
 * [RFC-7617](https://tools.ietf.org/html/rfc7617): *The 'Basic' HTTP Authentication Scheme*.
-  All of it.    
 * Todd Fredrich, *RESTful Service Best Practices*, [available in different formats](https://www.restapitutorial.com/resources.html).
-  All  of it.  
 * Chris Richardson and Floyd Smith, *Microservices From Design to Deployment*.
   Free ebook, but need registration to download its [PDF](https://www.nginx.com/resources/library/designing-deploying-microservices/).
-  Note: in that link it is called *Designing and Deploying Microservices*.  All of it.
+  Note: in that link it is called *Designing and Deploying Microservices*.
 * [Spring](https://spring.io)
 * [Kotlin](https://kotlinlang.org/docs/kotlin-docs.pdf)
 * [GraphQL](https://graphql.org/)
 * [RabbitMQ](https://www.rabbitmq.com/)
 
 
-## Exercises
-
-There is no exercise with solutions in this course (yet).
-
-If you have never used Kotlin before, it is recommended to do some
-Kotlin Koans, like [this one](https://kotlinlang.org/docs/tutorials/koans.html). 
-
-Before the exam starts, it makes sense to develop a pet project to get practice.
-In other words, choose a topic you like, and build a RESTful API for it.
-Each class, when a new concept is introduced, extend your project with what
-you learn. 
 
 ## Exam
 
-In this course the exam is divided in two parts: a written, theoretical exam,
-and a project to do at home.
-Two examples of mock exam for the theoretical part can be 
-found [here (mock_0)](exams/theory_mock_exam_0.pdf)
-and [here (mock_1)](exams/theory_mock_exam_1.pdf).
-On the other hand, 
-an example of mock exam for the project can be 
+An example of mock exam for the home-project can be 
 found [here](exams/project_mock_exam.pdf).
+
+**WARNING for Fall 2020**: the course is going through some restructuring.
+So the details of the exam will likely change before the end
+of the course.

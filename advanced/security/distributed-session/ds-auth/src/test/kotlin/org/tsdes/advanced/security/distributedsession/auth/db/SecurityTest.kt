@@ -6,12 +6,11 @@ import io.restassured.http.ContentType
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.CoreMatchers.not
 import org.hamcrest.Matchers.contains
-import org.junit.Assert.assertNotEquals
-import org.junit.Assert.assertNull
-import org.junit.Before
-import org.junit.ClassRule
-import org.junit.Test
-import org.junit.runner.RunWith
+import org.junit.jupiter.api.Assertions.assertNotEquals
+import org.junit.jupiter.api.Assertions.assertNull
+import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.extension.ExtendWith
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.test.util.TestPropertyValues
@@ -19,14 +18,17 @@ import org.springframework.boot.web.server.LocalServerPort
 import org.springframework.context.ApplicationContextInitializer
 import org.springframework.context.ConfigurableApplicationContext
 import org.springframework.test.context.ContextConfiguration
-import org.springframework.test.context.junit4.SpringRunner
+import org.springframework.test.context.junit.jupiter.SpringExtension
 import org.testcontainers.containers.GenericContainer
+import org.testcontainers.junit.jupiter.Container
+import org.testcontainers.junit.jupiter.Testcontainers
 import org.tsdes.advanced.security.distributedsession.auth.AuthDto
 
 /**
  * Created by arcuri82 on 10-Nov-17.
  */
-@RunWith(SpringRunner::class)
+@Testcontainers
+@ExtendWith(SpringExtension::class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ContextConfiguration(initializers = [(SecurityTest.Companion.Initializer::class)])
 class SecurityTest {
@@ -46,10 +48,9 @@ class SecurityTest {
             Here, going to use an actual Redis instance started in Docker
          */
 
-        @ClassRule
+        @Container
         @JvmField
-        val redis = KGenericContainer("redis:latest")
-                .withExposedPorts(6379)
+        val redis = KGenericContainer("redis:latest").withExposedPorts(6379)
 
         class Initializer : ApplicationContextInitializer<ConfigurableApplicationContext> {
             override fun initialize(configurableApplicationContext: ConfigurableApplicationContext) {
@@ -65,7 +66,7 @@ class SecurityTest {
     }
 
 
-    @Before
+    @BeforeEach
     fun initialize() {
         RestAssured.baseURI = "http://localhost"
         RestAssured.port = port
