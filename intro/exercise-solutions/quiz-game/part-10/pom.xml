@@ -23,7 +23,6 @@
             <scope>test</scope>
         </dependency>
 
-
         <dependency>
             <groupId>org.joinfaces</groupId>
             <artifactId>jsf-spring-boot-starter</artifactId>
